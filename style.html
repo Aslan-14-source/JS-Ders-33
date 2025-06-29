@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthStar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+    }
+
+    .hero button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .products {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .products h2 {
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .product img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+    }
+
+    .product-info h4 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .product-info p {
+      color: #007BFF;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>NorthStar</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>STYLIST PICKS BEAT THE HEAT</h1>
+      <button>SHOP NOW</button>
+    </div>
+  </section>
+
+  <section class="products">
+    <h2>Discover NEW Arrivals</h2>
+    <p>Recently added shirts!</p>
+    <div class="grid">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1593032465171-8f28ff3d3a39" alt="Plain White Shirt">
+        <div class="product-info">
+          <h4>Plain White Shirt</h4>
+          <p>$29.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600180758890-b9d42db14a07" alt="Denim Jacket">
+        <div class="product-info">
+          <h4>Denim Jacket</h4>
+          <p>$69.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602810317791-8dc0d6f42c2c" alt="Black Polo Shirt">
+        <div class="product-info">
+          <h4>Black Polo Shirt</h4>
+          <p>$49.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1618354691321-8866c4d5f340" alt="Blue Sweatshirt">
+        <div class="product-info">
+          <h4>Blue Sweatshirt</h4>
+          <p>$79.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1533236897111-3e94666b2edf" alt="Blue Plain Shirt">
+        <div class="product-info">
+          <h4>Blue Plain Shirt</h4>
+          <p>$49.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1551854838-5931f59b79aa" alt="Dark Blue Shirt">
+        <div class="product-info">
+          <h4>Dark Blue Shirt</h4>
+          <p>$89.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1600181952029-96c7f5a31aa2" alt="Outcast T Shirt">
+        <div class="product-info">
+          <h4>Outcast T Shirt</h4>
+          <p>$19.00</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0b" alt="Polo Plain Shirt">
+        <div class="product-info">
+          <h4>Polo Plain Shirt</h4>
+          <p>$29.00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
